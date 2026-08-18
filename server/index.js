@@ -156,17 +156,17 @@ Return this structure:
 
     const intent = JSON.parse(text);
 
-  const allowedIntents = new Set([
-    "technology_exposure",
-    "portfolio_risk",
-    "technology_risk",
-    "technology_scenario",
-    "asset_scenario",
-    "strategy",
-    "prediction_boundary",
-    "tax_loss_harvesting",
-    "general",
-  ]);
+    const allowedIntents = new Set([
+      "technology_exposure",
+      "portfolio_risk",
+      "technology_risk",
+      "technology_scenario",
+      "asset_scenario",
+      "strategy",
+      "prediction_boundary",
+      "tax_loss_harvesting",
+      "general",
+    ]);
 
     if (
       !intent ||
@@ -234,8 +234,8 @@ Return this structure:
   }
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
-app.listen(PORT, () => {
-  console.log(`AURA API running on http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`AURA API running on port ${PORT}`);
 });
