@@ -1,0 +1,263 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+
+/* =========================================================
+   AI PORTFOLIO INSIGHTS
+   Design System Foundation
+   ========================================================= */
+
+:root {
+  /* -------------------------------------------------------
+     COLOR — LIGHT
+     ------------------------------------------------------- */
+
+--color-bg: #e9e9e5;
+--color-sidebar: #deded9;
+--color-surface: #f8f8f5;
+--color-surface-subtle: #eeeeea;
+--color-surface-hover: #e3e3de;
+--color-surface-active: #d9d9d3;
+
+--color-text-primary: #171715;
+--color-text-secondary: #5f5f5a;
+--color-text-muted: #7f7f78;
+--color-text-placeholder: #999991;
+
+--color-border: #deded8;
+--color-border-strong: #cecec7;
+
+  /* -------------------------------------------------------
+     SEMANTIC
+     ------------------------------------------------------- */
+
+  --color-positive: #347254;
+  --color-positive-subtle: #eaf3ed;
+
+  --color-warning: #9a6f2f;
+  --color-warning-subtle: #f7f0e3;
+
+  --color-risk: #b05248;
+  --color-risk-subtle: #f8eae8;
+
+  /* -------------------------------------------------------
+     AI
+     ------------------------------------------------------- */
+
+  --color-ai: #625f88;
+  --color-ai-subtle: #efeff7;
+  --color-ai-border: #dcdbea;
+
+  /* -------------------------------------------------------
+     CHARTS
+     ------------------------------------------------------- */
+
+  --color-chart-primary: #347254;
+  --color-chart-secondary: #7d8c83;
+  --color-chart-tertiary: #a9aaa4;
+  --color-chart-muted: #d8d8d3;
+
+  /* -------------------------------------------------------
+     TYPOGRAPHY
+     ------------------------------------------------------- */
+
+    --font-sans:
+    "Geist Variable",
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  /* -------------------------------------------------------
+     TYPE SCALE
+     ------------------------------------------------------- */
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.75rem;
+  --text-display: clamp(2.75rem, 5vw, 4.5rem);
+
+  /* -------------------------------------------------------
+     SPACING
+     ------------------------------------------------------- */
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* -------------------------------------------------------
+     RADIUS
+     ------------------------------------------------------- */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-full: 9999px;
+
+  /* -------------------------------------------------------
+     SHADOWS
+     ------------------------------------------------------- */
+
+ --shadow-sm:
+  0 1px 2px rgb(0 0 0 / 0.035),
+  0 2px 8px rgb(0 0 0 / 0.025);
+
+--shadow-md:
+  0 4px 16px rgb(0 0 0 / 0.055),
+  0 10px 28px rgb(0 0 0 / 0.035);
+
+--shadow-lg:
+  0 12px 36px rgb(0 0 0 / 0.075),
+  0 20px 48px rgb(0 0 0 / 0.035);
+
+  /* -------------------------------------------------------
+     MOTION
+     ------------------------------------------------------- */
+
+  --duration-fast: 120ms;
+  --duration-normal: 220ms;
+  --duration-slow: 360ms;
+  --duration-page: 420ms;
+
+  --ease-standard: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-emphasized: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* =========================================================
+   DARK THEME
+   ========================================================= */
+
+.dark {
+--color-bg: #0b0b0a;
+--color-sidebar: #111110;
+--color-surface: #151514;
+--color-surface-subtle: #1c1c1a;
+--color-surface-hover: #232320;
+--color-surface-active: #2a2a27;
+
+--color-text-primary: #f2f2ee;
+--color-text-secondary: #b0b0a8;
+--color-text-muted: #85857d;
+--color-text-placeholder: #6f6f68;
+
+--color-border: #2b2b28;
+--color-border-strong: #41413c;
+
+  --color-positive: #72a689;
+  --color-positive-subtle: #18251e;
+
+  --color-warning: #c49a5a;
+  --color-warning-subtle: #292318;
+
+  --color-risk: #d17b70;
+  --color-risk-subtle: #2b1b19;
+
+  --color-ai: #aaa7cf;
+  --color-ai-subtle: #211f2d;
+  --color-ai-border: #38364b;
+
+  --color-chart-primary: #72a689;
+  --color-chart-secondary: #87958c;
+  --color-chart-tertiary: #696a65;
+  --color-chart-muted: #3b3b37;
+
+ --shadow-sm:
+  0 1px 2px rgb(0 0 0 / 0.035),
+  0 2px 8px rgb(0 0 0 / 0.025);
+
+--shadow-md:
+  0 4px 16px rgb(0 0 0 / 0.055),
+  0 10px 28px rgb(0 0 0 / 0.035);
+
+--shadow-lg:
+  0 12px 36px rgb(0 0 0 / 0.075),
+  0 20px 48px rgb(0 0 0 / 0.035);
+}
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+::selection {
+  background: var(--color-ai-subtle);
+  color: var(--color-text-primary);
+}
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+:focus-visible {
+  outline: 2px solid var(--color-ai);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
