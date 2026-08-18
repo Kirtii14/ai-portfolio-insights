@@ -87,3 +87,24 @@ This product connects those questions into one guided experience instead of maki
 cd client
 npm install
 npm run dev
+
+```
+
+### Bacend
+
+```bash
+cd server
+npm install
+npm run dev
+
+```
+### Environment variables:
+
+```bash
+# server/.env
+GEMINI_API_KEY=your_api_key
+# client/.env
+VITE_API_BASE_URL=http://localhost:3001
+
+```
+
