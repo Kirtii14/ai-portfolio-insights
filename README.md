@@ -90,7 +90,7 @@ npm run dev
 
 ```
 
-### Bacend
+### Backend
 
 ```bash
 cd server
