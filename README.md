@@ -2,7 +2,7 @@
 
 ### AI-First Portfolio Insights & Agent Experience
 
-An AI-first personal wealth experience built for the **Alpha Search Technologies Pvt. Ltd.** assignment.
+An AI-first personal wealth experience built for the assignment.
 
 **Live Demo:** https://ai-portfolio-insights.vercel.app/  
 
